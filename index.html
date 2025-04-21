@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تفاصيل بطاقة السائق</title>
+  <style>
+    /* إعادة تعيين الأنماط الأساسية */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f8f9f9;
+      color: #333;
+      padding: 20px;
+      direction: rtl;
+      line-height: 1.6;
+    }
+    /* حاوية مركزية لاحتواء المحتوى */
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    /* فئات النصوص */
+    .fs-20 { font-size: 20px; }
+    .fs-18 { font-size: 18px; }
+    .fs-14 { font-size: 14px; }
+    .fs-12 { font-size: 12px; }
+    .fw-600 { font-weight: 600; }
+    .fw-bold { font-weight: bold; }
+    .mb-3 { margin-bottom: 1rem; }
+    .tx-lightgray { color: #a8a7a7; }
+    .pb-1 { padding-bottom: 0.25rem; }
+    .my-0 { margin: 0; }
+    /* تصميم البطاقة */
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
+    .card-body {
+      padding: 1.5rem;
+    }
+    /* تخطيط شبكة التفاصيل باستخدام Flexbox */
+    .d-flex { display: flex; }
+    .flex-wrap { flex-wrap: wrap; }
+    .col-4 {
+      width: 33.3333%;
+      padding: 0.5rem;
+    }
+    @media (max-width: 768px) {
+      .col-4 { width: 100%; }
+    }
+    /* تطبيق لون العنصر المطلوب لأسماء "تفاصيل بطاقة السائق" و"بطاقة السائق" */
+    .driver-card-details {
+      color: #0D47A1 !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- ترويسة الصفحة -->
+    <header>
+      <p class="fs-20 fw-600 driver-card-details mb-3">
+        تفاصيل بطاقة السائق
+      </p>
+    </header>
+    <!-- بطاقة بيانات السائق -->
+    <div class="card">
+      <div class="card-body">
+        <p class="fs-18 fw-600 driver-card-details">بطاقة السائق</p>
+        <div class="d-flex flex-wrap">
+          <div class="col-4">
+            <p class="fs-12 tx-lightgray pb-1 my-0">رقم البطاقة</p>
+            <p class="fs-14 fw-bold">33.00544233</p>
+          </div>
+          <div class="col-4">
+            <p class="fs-12 tx-lightgray pb-1 my-0">هوية السائق</p>
+            <p class="fs-14 fw-bold">2598711543</p>
+          </div>
+          <div class="col-4">
+            <p class="fs-12 tx-lightgray pb-1 my-0">الاسم الأول</p>
+            <p class="fs-14 fw-bold">نور</p>
+          </div>
+          <div class="col-4">
+            <p class="fs-12 tx-lightgray pb-1 my-0">اسم العائلة</p>
+            <p class="fs-14 fw-bold">نابي</p>
+          </div>
+          <div class="col-4">
+            <p class="fs-12 tx-lightgray pb-1 my-0">تاريخ إصدار البطاقة</p>
+            <p class="fs-14 fw-bold">2025\04\17</p>
+          </div>
+          <div class="col-4">
+            <p class="fs-12 tx-lightgray pb-1 my-0">تاريخ إنتهاء البطاقة</p>
+            <p class="fs-14 fw-bold">2026\04\17</p>
+          </div>
+          <div class="col-4">
+            <p class="fs-12 tx-lightgray pb-1 my-0">نوع البطاقة</p>
+            <p class="fs-14 fw-bold">نقل ثقيل</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
